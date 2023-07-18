@@ -23,7 +23,9 @@ app.use((req, res, next) => {
   next();
 });
 mongoose.connect(
-  `mongodb+srv://aakash:${process.env.MONGO_ATLAS_PW}@cluster0.dub1fmi.mongodb.net/?retryWrites=true&w=majority`
+  "mongodb+srv://aakash:" +
+    process.env.MONGO_ATLAS_PW +
+    "@cluster0.dub1fmi.mongodb.net/?retryWrites=true&w=majority"
 );
 mongoose.Promise = global.Promise;
 app.use("/products", productRoutes);
