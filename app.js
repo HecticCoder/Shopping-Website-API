@@ -23,7 +23,7 @@ app.use((req, res, next) => {
   next();
 });
 mongoose.connect(
-  "mongodb+srv://aakash:" +
+  "mongodb+srv://"+ process.env.MONGO_ATLAS_UN + ":" +
     process.env.MONGO_ATLAS_PW +
     "@cluster0.dub1fmi.mongodb.net/?retryWrites=true&w=majority"
 );
