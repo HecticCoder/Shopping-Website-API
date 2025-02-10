@@ -1,10 +1,6 @@
-A backend application of Shopping Website API
+A backend application of a Restful Shopping Website API.
+Tech Stack: JavaScript, Node.js, Express, Mongodb.
 
-Built using Nodejs and Express
 
-CRUD Functionality, Authentication and Authorization done using jwt tokens
 
-DB Schema created using Mongoose middleware
-
-MongoDB as Database for storing orders and products data
 
